@@ -18,10 +18,8 @@ function CheckoutButton({ experienceId }: { experienceId: string }) {
         experienceId,
         price: 1,
       });
-      const result = await iframeSdk.inAppPurchase({
-        planId: data.planId,
-        id: data.checkoutConfigurationId,
-      });
+
+      const result = await iframeSdk.inAppPurchase(data);
       if (result.status === "ok") console.log("Charge successful");
     } catch (error) {
       console.error("Charge failed");

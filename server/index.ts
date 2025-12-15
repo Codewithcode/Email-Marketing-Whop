@@ -37,7 +37,7 @@ export const appRouter = router({
 
       return {
         planId: result.plan.id,
-        checkoutConfigurationId: result.id,
+        id: result.id,
       };
     } catch (error) {
       console.error(error);
@@ -69,7 +69,7 @@ export const appRouter = router({
 
         return {
           planId: result.plan.id,
-          checkoutConfigurationId: result.id,
+          id: result.id,
         };
       } catch (error) {
         console.error(error);
