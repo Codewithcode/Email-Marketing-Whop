@@ -12,6 +12,9 @@ importers:
 
   .:
     dependencies:
+      '@frosted-ui/icons':
+        specifier: 0.0.1-canary.124
+        version: 0.0.1-canary.124(@types/react@19.2.2)(react@19.2.0)
       '@tanstack/react-query':
         specifier: ^5.90.10
         version: 5.90.10(react@19.2.0)
@@ -34,8 +37,8 @@ importers:
         specifier: 0.3.0
         version: 0.3.0(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@whop/sdk':
-        specifier: 0.0.19
-        version: 0.0.19
+        specifier: 0.0.28
+        version: 0.0.28
       next:
         specifier: 16.0.10
         version: 16.0.10(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -185,6 +188,12 @@ packages:
 
   '@frosted-ui/colors@0.0.1-canary.61':
     resolution: {integrity: sha512-fl+yihO8kxr7Q1w4z4rRwWePZtQOQoUx9fGkx1BhQx5e/mwEtyXOK8hTs+nu293xx7pjiub/zhzGszFIeofafw==}
+
+  '@frosted-ui/icons@0.0.1-canary.124':
+    resolution: {integrity: sha512-HHeUT1m2rSqUz1JRW9XJtbvEz3G6WySsNwCcgazEgLjSwmL/+1gUiZnLhUuldyC4JHiatrENbbfVZPwPyU+/TQ==}
+    peerDependencies:
+      '@types/react': 19.2.2
+      react: ^16.x || ^17.x || ^18.x
 
   '@graphql-typed-document-node/core@3.2.0':
     resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
@@ -1837,8 +1846,8 @@ packages:
     peerDependencies:
       react: ^19.0.0
 
-  '@whop/sdk@0.0.19':
-    resolution: {integrity: sha512-VZm6pZsNU3Y0MQyPrZgeHnLZQs0kOI3SNtAHy88D3PlkxVW7ZJRkAQGGIRHncVt2uhNOZ3M8XKUTVk5Uk6a52Q==}
+  '@whop/sdk@0.0.28':
+    resolution: {integrity: sha512-/7cy//wFH9+53Cj2u6MGsBY+mRNw7QaOtdIfYoOAKw4I4kt0zLtsaZ3cXYZa8g9fnI+bMv02271MXSAGZnAu7w==}
 
   aria-hidden@1.2.6:
     resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
@@ -2393,6 +2402,11 @@ snapshots:
       tslib: 2.8.1
 
   '@frosted-ui/colors@0.0.1-canary.61': {}
+
+  '@frosted-ui/icons@0.0.1-canary.124(@types/react@19.2.2)(react@19.2.0)':
+    dependencies:
+      '@types/react': 19.2.2
+      react: 19.2.0
 
   '@graphql-typed-document-node/core@3.2.0(graphql@16.11.0)':
     dependencies:
@@ -4484,7 +4498,7 @@ snapshots:
       - '@types/react-dom'
       - react-dom
 
-  '@whop/sdk@0.0.19':
+  '@whop/sdk@0.0.28':
     dependencies:
       jose: 6.1.0
       standardwebhooks: 1.0.0
